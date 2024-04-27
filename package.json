@@ -1,9 +1,9 @@
 {
-  "name": "masscode-assistant",
-  "displayName": "massCode assistant",
+  "name": "masscode-assistant-enhanced",
+  "displayName": "massCode assistant enhanced",
   "description": "Fetch snippets from massCode app",
-  "version": "1.1.0",
-  "publisher": "AntonReshetov",
+  "version": "1.0.1",
+  "publisher": "GoodbyeNJN",
   "engines": {
     "vscode": "^1.66.0"
   },
@@ -23,16 +23,21 @@
       },
       {
         "command": "masscode-assistant.create",
-        "title": "massCode: Create Snippet"
+        "title": "massCode: Create Snippet From Selection"
       }
     ],
     "configuration": {
-      "title": "Search node_modules",
+      "title": "massCode Assistant",
       "properties": {
         "masscode-assistant.notify": {
           "type": "boolean",
           "default": true,
           "description": "Show notification"
+        },
+        "masscode-assistant.baseUrl": {
+          "type": "string",
+          "default": "http://localhost:3033",
+          "description": "Specifies the api endpoints url of an active massCode app, default is `http://localhost:3033`"
         }
       }
     }
@@ -40,7 +45,7 @@
   "icon": "assets/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/massCodeIO/assistant-vscode"
+    "url": "https://github.com/GoodbyeNJN/assistant-vscode"
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
