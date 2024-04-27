@@ -2,7 +2,7 @@
   "name": "masscode-assistant-enhanced",
   "displayName": "massCode assistant enhanced",
   "description": "Fetch snippets from massCode app",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "publisher": "GoodbyeNJN",
   "engines": {
     "vscode": "^1.66.0"
